@@ -4,11 +4,18 @@
   "bin": {
     "aws-sample-vpc": "bin/aws-sample-vpc.js"
   },
+  "author": {
+    "name": "Fawad Mazhar",
+    "url": "https://github.com/fawad1985"
+  },
+  "description": "Sample VPC Configuration.",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
     "test": "jest",
-    "cdk": "cdk"
+    "bootstrap:dev": "cdk bootstrap -v --profile {profile_name} --context stage=dev",
+    "synth:dev": "npx cdk -v --profile {profile_name} synth sample-vpc-dev",
+    "diff:dev": "npx  cdk -v --profile {profile_name} diff sample-vpc-dev",
+    "deploy:dev": "npx cdk -v --profile {profile_name} deploy sample-vpc-dev",
+    "destroy:dev": "npx cdk -v --profile {profile_name} destroy sample-vpc-dev"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
