@@ -6,7 +6,7 @@ Fawad Mazhar <fawadmazhar@hotmail.com> 2024
 ---
 
 ## Overview
-This stack contains a sample VPC configuration.
+This repository contains a sample VPC configuration.
 
 This vpc configuration is laid down with the following assumptions:
  - There will be upto 5 regional deployments
@@ -14,13 +14,17 @@ This vpc configuration is laid down with the following assumptions:
  - The network address space would start from `10.16.0.0/16` onwards and upwards till `10.127.255.255/16` leaving behind enough address space for spare subnets and possibly emerging new availability zones.
 
 
-## 🐒 Pre-requisites
+#### Important Note
+This deployment incurs const.
+
+
+## Pre-requisites
   - 🔧 AWS CLI Installed & Configured 👉 [Get help here](https://aws.amazon.com/cli/)
   - 🔧 Node.js 18.x+
   - 🔧 AWS CDK 👉 [Get help here](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) 
 
 
-## ⚙ Configuring AWS CLI
+## Configuring AWS CLI
 ```bash
   ~/.aws/credentials
 
@@ -62,6 +66,3 @@ Run command:
 ```bash
   npm run synth:dev
 ```
-
-## Note
-This deployment incurs cost.

@@ -9,6 +9,10 @@
     "url": "https://github.com/fawad1985"
   },
   "description": "Sample VPC Configuration.",
+  "keywords": [
+    "aws",
+    "vpc"
+  ],
   "scripts": {
     "test": "jest",
     "bootstrap:dev": "cdk bootstrap -v --profile {profile_name} --context stage=dev",
