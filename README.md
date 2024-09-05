@@ -15,7 +15,7 @@ This vpc configuration is laid down with the following assumptions:
 
 
 #### Important Note
-This deployment incurs const.
+This deployment incurs cost.
 
 
 ## Pre-requisites
